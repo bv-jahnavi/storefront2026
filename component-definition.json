@@ -131,6 +131,43 @@
           }
         },
         {
+          "title": "Cards Slider",
+          "id": "cards-slider",
+          "model": "cards-slider",
+          "filter": "cards-slider",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2
+            }
+          }
+        },
+        {
+          "title": "Cards Slider Item",
+          "id": "cards-slider-item",
+          "model": "cards-slider-item",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1)>picture>img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          }
+        },
+        {
           "title": "Carousel",
           "id": "carousel",
           "model": "carousel",
